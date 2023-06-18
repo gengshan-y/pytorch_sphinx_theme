@@ -10611,11 +10611,11 @@ pre {
 }
 
 .header-logo {
-  height: 30px;
+  height: 40px;
   width: 115px;
   background-image: url("../images/logo.png");
   background-repeat: no-repeat;
-  background-size: 115px 30px;
+  background-size: 115px 40px;
   display: block;
   float: left;
   z-index: 10;

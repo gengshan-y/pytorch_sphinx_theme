@@ -101,6 +101,8 @@
     integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
 
 </head>
 
@@ -525,7 +527,7 @@
             <a href="{{ theme_variables.external_urls['get_started'] }}">Get Started</a>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="{{ theme_variables.external_urls['ecosystem'] }}">Ecosystem</a>
           </li>
 
@@ -535,17 +537,17 @@
 
           <li>
             <a href="{{ theme_variables.external_urls['blog'] }}">Blog</a>
-          </li>
+          </li> -->
 
           <li {%- if theme_pytorch_project=='tutorials' %} class="active" {%- endif %}>
             <a href="{{ theme_variables.external_urls['tutorials'] }}">Tutorials</a>
           </li>
 
           <li class="resources-mobile-menu-title" {%- if theme_pytorch_project=='docs' %} class="active" {%- endif %}>
-            Docs
+            <a href="{{ theme_variables.external_urls['docs'] }}"> Docs</a>
           </li>
 
-          <ul class="resources-mobile-menu-items">
+          <!-- <ul class="resources-mobile-menu-items">
             <li>
               <a href="{{ theme_variables.external_urls['docs'] }}">PyTorch</a>
             </li>
@@ -585,9 +587,9 @@
             <li>
               <a href="{{ theme_variables.external_urls['xla'] }}">PyTorch on XLA Devices</a>
             </li>
-          </ul>
+          </ul> -->
 
-          <li class="resources-mobile-menu-title">
+          <!-- <li class="resources-mobile-menu-title">
             Resources
           </li>
 
@@ -624,7 +626,7 @@
             <li>
               <a href="{{ theme_variables.external_urls['hub'] }}">Models (Beta)</a>
             </li>
-          </ul>
+          </ul> -->
 
           <li>
             <a href="{{ theme_variables.external_urls['github'] }}">Github</a>
